@@ -33,7 +33,7 @@ map.on("click", function(event){
 	console.log(event)
 
 	marker.remove()
-	marker.L.marker([event.latling.lat, event.latling.lng]).addTo(map)
+	marker = L.marker([event.latlng.lat, event.latlng.lng]).addTo(map)
 
 })
 
